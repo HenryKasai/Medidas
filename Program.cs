@@ -19,7 +19,7 @@ namespace Medidas
             decimal resultado2 = metros * cm;
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Seu resultado em quilômetros é: " + resultado + "." + "e em centímetros é: " + resultado2 + ".");
+            Console.WriteLine("Seu resultado em quilômetros é: " + resultado + " km." + " E em centímetros é: " + resultado2 + " cm.");
             Console.ReadKey();
             Console.ForegroundColor = ConsoleColor.Gray;
 
