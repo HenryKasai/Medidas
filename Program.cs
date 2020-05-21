@@ -10,16 +10,17 @@ namespace Medidas
             Console.WriteLine("Insira determinada medida em metros, e veja a medida em quilômetros e centímetros.");
             Console.ForegroundColor = ConsoleColor.Blue;
             string metro = Console.ReadLine();
-            decimal metros = Convert.ToDecimal(metro);
+            double metros = Convert.ToDouble(metro);
             string kms = "1000";
             int km = Convert.ToInt32(kms);
-            decimal resultado = metros / km;
+            double resultado = metros / km;
             string cms = "100";
-            decimal cm = Convert.ToDecimal(cms);
-            decimal resultado2 = metros * cm;
+            double cm = Convert.ToDouble(cms);
+            double resultado2 = metros * cm;
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Seu resultado em quilômetros é: " + resultado + " km." + " E em centímetros é: " + resultado2 + " cm.");
+            Console.WriteLine($"{metros} m = {resultado} km");
+            Console.WriteLine($"{metros} m = {resultado2} cm");
             Console.ReadKey();
             Console.ForegroundColor = ConsoleColor.Gray;
 
